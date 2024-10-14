@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-l from-cyan-100 via-slate-200 to-blue-100 h-screen flex"
+  >
+    <div class="text-center bg-white rounded-2xl py-10 px-20 m-auto">
+      <h1 class="font-mono font-semibold text-4xl mb-5">Info</h1>
+      <form class="flex flex-col gap-2">
+        <label
+          for="fName"
+          class="font-mono after:content-['*'] after:text-red-500"
+          >First Name:</label
+        >
+        <input
+          type="text"
+          name="firstname"
+          id="fName"
+          placeholder="First Name"
+          required
+          class="font-mono outline outline-1 focus:outline-2 focus:scale-[1.03] focus:outline-2 focus:scale-[1.03] rounded px-2"
+        />
+        <label
+          for="lName"
+          class="font-mono after:content-['*'] after:text-red-500"
+          >Last Name:</label
+        >
+        <input
+          type="text"
+          name="lastname"
+          id="lName"
+          placeholder="Last Name"
+          required
+          class="font-mono outline outline-1 focus:outline-2 focus:scale-[1.03] rounded px-2"
+        />
+        <label
+          for="phoneNumber"
+          class="font-mono after:content-['*'] after:text-red-500"
+          >Phone Number:</label
+        >
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneNumber"
+          placeholder="Phone Number"
+          required
+          maxlength="10"
+          class="font-mono outline outline-1 focus:outline-2 focus:scale-[1.03] rounded px-2"
+        />
+        <label
+          for="email"
+          class="font-mono after:content-['*'] after:text-red-500"
+          >E-mail:</label
+        >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email123@.gmail.com"
+          required
+          class="font-mono outline outline-1 focus:outline-2 focus:scale-[1.03] rounded px-2"
+        />
+        <label
+          for="password"
+          class="font-mono after:content-['*'] after:text-red-500 "
+          >Password:</label
+        >
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+          required
+          class="font-mono outline outline-1 focus:outline-2 focus:scale-[1.03] rounded px-2"
+        />
+        <input
+          type="submit"
+          value="Submit"
+          class="font-mono font-semibold tracking-wide text-lg outline bg-green-500 text-white py-1.5 rounded-xl mt-5 cursor-pointer hover:scale-105 active:scale-95"
+        />
+      </form>
+    </div>
+  </body>
+</html>
